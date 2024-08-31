@@ -1,0 +1,172 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /* box-sizing: border-box; */
+    font-family: Arial, sans-serif;
+    background-image: url('src/background.jpg'); /* Set your background image here */
+    background-size: cover; /* Cover the entire viewport */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #24272b; /* Dark mode color */
+    padding: 10px 20px;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.navbar-logo span {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    margin: 0 15px;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+}
+
+.navbar-search {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-search input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 5px;
+}
+
+.search-btn, .clear-btn {
+    background-color: #2ABB7F; /* Secondary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.search-btn:hover, .clear-btn:hover {
+    background-color: #228A64;
+}
+
+.about-section {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: white;
+}
+
+.about-section h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.team-section {
+    padding: 20px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    color: white; /* Change text color to white */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-around; /* Space members evenly */
+    flex-wrap: wrap; /* Allow wrapping if needed */
+}
+
+.team-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.team-member {
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0 10px; /* Adjust margins for spacing */
+    flex: 1; /* Allow members to grow equally */
+    min-width: 200px; /* Set a minimum width for each member */
+    max-width: 300px; /* Set a maximum width for each member */
+    border-radius: 8px;
+}
+
+.member-info {
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow */
+    background-color: transparent; /* Remove background color */
+    color: white; /* Ensure text color is white */
+}
+
+.member-info h3 {
+    margin: 0;
+    font-size: 22px;
+}
+
+.member-info p {
+    margin: 5px 0;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.social-icons {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icons a {
+    margin: 10px 0;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #2ABB7F; /* Change color on hover */
+}

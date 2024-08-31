@@ -1,0 +1,193 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #24272b; /* Dark mode color */
+    padding: 10px 20px;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.navbar-logo span {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-links li {
+    margin: 0 15px;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navbar-links a:hover {
+    text-decoration: underline;
+}
+
+.navbar-search {
+    display: flex;
+    align-items: center;
+    position: relative; 
+}
+
+.navbar-search input {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 5px;
+}
+
+.search-btn, .clear-btn {
+    background-color: #2ABB7F; /* Secondary color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.search-btn:hover, .clear-btn:hover {
+    background-color: #228A64;
+}
+
+.suggestion-box {
+    position: absolute;
+    top: 100%; /* Position it just below the search input */
+    left: 0;
+    width: 100%;
+    max-height: 300px; /* Adjust as needed */
+    overflow-y: auto; /* Scroll if needed */
+    background: transparent; /* White background with 80% opacity */
+    backdrop-filter: blur(10px); /* Apply a blur effect to the background */
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Light border for better visibility */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10; /* Ensure it appears above other content */
+    display: none; /* Initially hidden */
+    border-radius: 8px; /* Optional: Rounded corners */
+    padding: 10px; /* Add padding inside the suggestion box */
+}
+
+.suggestion-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px; /* Space between suggestion items */
+    padding: 10px;
+    cursor: pointer;
+}
+
+.suggestion-image {
+    width: 100%; /* Full width of the suggestion box */
+    height: 100px; /* Adjust as needed */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border-radius: 8px; /* Optional: Rounded corners for the image */
+    margin-bottom: 10px; /* Space between the image and text */
+}
+
+.suggestion-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.suggestion-name {
+    font-weight: bold;
+    margin-bottom: 5px; /* Space between name and description */
+}
+
+.suggestion-description {
+    font-size: 14px;
+    color: #555; /* Adjust text color for better readability */
+}
+
+.suggestion-item:hover {
+    background-color: rgba(0, 0, 0, 0.1); /* Slightly darken the background on hover */
+}
+
+.hero-section {
+    position: relative;
+    background-image: url('src/background.jpg'); /* Make sure this path is correct */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; /* Ensure the image does not repeat */
+    height: 100vh; /* Adjust height if necessary */
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    text-align: left;
+    max-width: 600px;
+}
+
+.hero-content h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin: 20px 0;
+}
+
+.cta-btn {
+    background-color: #2ABB7F; /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.cta-btn:hover {
+    background-color: #228A64;
+}
+
+.social-icons {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-icons a {
+    margin: 10px 0;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #2ABB7F; /* Change color on hover */
+}
